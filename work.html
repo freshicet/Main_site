@@ -37,6 +37,7 @@
     </header>
     
     <div class="main-content">
+    <body class="animate-in">
       <h2>Some of my recent work</h2>
       <h3>Click on a piece to see more about it</h3><br/>
       <ul id="filter-nav">
@@ -58,7 +59,7 @@
       
            
       </section>
-      
+     </body> 
     </div>
     
     <footer>
@@ -108,6 +109,11 @@
         return false;  
     });  
 }); 
+
+
+  window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
 </script>
   </body>
 </html>

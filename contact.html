@@ -14,7 +14,7 @@
 		  <script src="js/html5shiv.js"></script>
 		<![endif]-->
   </head>
-  <body id="contact">
+  <body id="contact" class = "animate-in">
   	<!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -68,5 +68,10 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
+    </script>
   </body>
 </html>

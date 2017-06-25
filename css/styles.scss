@@ -6,11 +6,11 @@
 
 $home-bg: #02c9c9;
 $home-hover: #0d4040;
-$work-bg: #2a2a2a;
+$work-bg: #53D7D7;
 $work-hover: #cc4141;
-$about-bg: #36cc4b;
+$about-bg: #2ACECE;
 $about-hover: #93ffa2;
-$contact-bg: #e74141;
+$contact-bg: #009F9F;
 $contact-hover: #4e0b0b;
 $text-colour: #fff;
 
@@ -55,6 +55,28 @@ $text-colour: #fff;
 
 }
 
+}
+
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 body#home {
   background: $home-bg;
   color: $text-colour;
@@ -97,7 +119,7 @@ a.cv-link:hover {
 } 
 
 body#work {
-  background: $work-bg;
+  background: color: #53D7D7!important;
   color: $text-colour;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   text-align: center;
